@@ -1,3 +1,10 @@
 .App {
    text-align: center;
+   background-image: url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2022/09/rick-morty-2804005.jpg?itok=PGO4XAnx);
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   position: absolute;
 }
+
