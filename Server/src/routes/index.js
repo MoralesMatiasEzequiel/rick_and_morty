@@ -1,6 +1,7 @@
-const { login } = require('../controllers/login');
 const { getCharById } = require('../controllers/getCharById');
-const { postFav, deleteFav } = require('../controllers/handleFavorites');
+const login = require('../controllers/login');
+const postFav = require('../controllers/postFav');
+const deleteFav = require('../controllers/deleteFav')
 const router = require('express').Router()  //Aqui lo que queremos de "express" es solo el Router.
 
 router.get('/character/:id', (req, res) => {
@@ -8,6 +9,10 @@ router.get('/character/:id', (req, res) => {
 })
 
 router.get('/login', (req, res) => {  
+    login(req, res);
+})
+
+router.post('/login', (req, res) => {  
     login(req, res);
 })
 

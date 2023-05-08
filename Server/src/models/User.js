@@ -6,7 +6,8 @@ module.exports = (sequelize) => {
          type: DataTypes.INTEGER(),  //Aqui podemos poner tambien: "type: DataType.UUID" esto nos va a permitir ingresar un combinado de letras y numero como por ej "afasff466-asd564-asd8799" (esto seria un hash).
          //defaultValue: DataTypes.UUIDV4(), //Esto permite que si no le pasamos un ID complejo éste lo va a crear.
          primaryKey: true,
-         allowNull: false
+         allowNull: false,
+         autoIncrement: true
       },
       email:{
          type: DataTypes.STRING(),
